@@ -6,17 +6,7 @@ export enum MovieId {
 export enum MovieCode {
   SCIFI = "scifi",
   COMEDY = "comedy",
-  BMOVIE = "bMovie",
-  DRAMEDY = "dramedy",
-  BLUERAY = "blueray",
-  THREED = "3D"
-}
-
-export enum PremiumGenres {
-  COMEDY = "comedy",
-  DRAMEDY = "dramedy",
-  BLUERAY = "blueray",
-  THREED = "3D"
+  BMOVIE = "bMovie"
 }
 
 interface MovieDetails {

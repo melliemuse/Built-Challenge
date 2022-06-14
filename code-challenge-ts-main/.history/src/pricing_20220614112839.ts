@@ -36,6 +36,7 @@ export const cost = (customer: any, movies: any): Array<number> => {
             
 export const totalCost = (customer: any, movies: any): number => {               
     let totalAmount = 0;
+
     let theseAmounts = cost(customer, movies);
     
     for (let price of theseAmounts) {
@@ -53,7 +54,7 @@ export const totalCost = (customer: any, movies: any): number => {
           let movie = movies[r.movieID];
 
           movie.code in PremiumGenres ? movie.isPremium = true : false
-
+          
           frequentRenterPoints++;
           if (movie.isNew && !movie.isPremium && r.days > 2) frequentRenterPoints++;
           

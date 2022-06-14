@@ -9,7 +9,7 @@ export const structure = {
         for (let r in customer.rentals) {
         let movie = movies[customer.rentals[r].movieID];
         let costs = cost(customer, movies);
-        if (Number(r) + 1 !== customer.rentals.length){
+        if (r + 1 !> customer.rentals.length){
             result += `\t<li>${movie.title}<em>${costs[Number(r)]}</em></li>\n`;
         }
         else {
